@@ -1,0 +1,7 @@
+<mat-card class="userdata__card" *ngFor="let reposdetail of reposDetail">
+  <img src="{{reposdetail.avatar_url}}" alt="" class="users__img">
+  {{reposdetail.full_name}}
+  <button (click)="AddFavoriteRepos(reposdetail.full_name)" ) mat-icon-button color="warn" aria-label="Favorite">
+  <mat-icon>favorite</mat-icon>
+</button>
+</mat-card>

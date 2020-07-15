@@ -1,0 +1,6 @@
+<mat-card class="userdata__card" *ngFor="let user of AllUsers">
+  <button [routerLink]="['/repos', user.login]">
+    <img src="{{user.avatar_url}}" alt="" class="users__img"></button>
+  {{user.login}}
+  {{user.repos_url}}
+</mat-card>
